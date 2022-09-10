@@ -11,6 +11,8 @@
         href="https://e7.pngegg.com/pngimages/176/984/png-clipart-restoration-hardware-nyse-rh-logo-brand-peel-angle-furniture-thumbnail.png"
         type="image/x-icon">
     <!--icone html5-->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- ajouter fichier de style css-->
     <title>My portfolio</title>
     <!--titre de la page My portfolio-->
 </head>
@@ -22,6 +24,7 @@
         <header>
             <hr>
             <!--ligne horizontal-->
+            <img class="menu" src="header.jpg" alt="Menu" />
             <ul>
                 <!-- liste non ordonnée representant la barre de navigation-->
                 <li><a href="#Home">Home</a></li>
@@ -43,11 +46,9 @@
         <div>
             <!--Home-->
             <a name="Home">
-                <H2>Home</H2>
-                <br>
-                <img src="welcome.jpg" alt="welcome" width="700px" />
+                <img class="contenu" src="welcome.jpg" alt="welcome" />
                 <br />
-                <audio controls>
+                <audio controls autoplay>
                     <source src="music.mp3" type="audio/mpeg">
                     <!--ajout d'un fichier audio-->>
                 </audio>
@@ -64,9 +65,20 @@
                 <p>Welcome to my portfolio</p>
                 <p>i'm Ramy Hedhli,
                     Full Stack JS Student in <a href="https://gomycode.com/TN-FR/home" target="_bank">gomycode</a>, and
-                    this is my first html webpage</p>
+                    this is my first html webpage.</p>
                 <!--paragraphe de bienvenue et me represente avec lien vers gomycode-->
-                <iframe width="460" height="320" src="https://www.youtube.com/embed/olJOZp57FWM"></iframe>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem cum impedit repellendus temporibus
+                    nulla aperiam a recusandae dignissimos ad itaque, ab suscipit totam rem voluptates facilis
+                    veritatis, laudantium blanditiis amet consectetur adipisicing elit. Autem cum impedit repellendus
+                    temporibus
+                    nulla aperiam a recusandae dignissimos ad itaque, ab suscipit totam rem voluptates facilis
+                    veritatis, laudantium blanditiis amet consectetur adipisicing elit. Autem cum impedit repellendus
+                    temporibus
+                    nulla aperiam a recusandae dignissimos ad itaque, ab suscipit totam rem voluptates facilis
+                    veritatis, laudantium blanditiis. Quo.</p>
+                <!--contenue à ajouter plus tard-->
+                <br />
+                <iframe class="video" width="460" height="320" src="https://www.youtube.com/embed/olJOZp57FWM"></iframe>
                 <!--video youtube-->
                 <br />
                 <a href="#Haut">Up</a>
@@ -79,7 +91,7 @@
                 <!--lien Work-->
                 <h2>Work</h2>
                 <br />
-                <img src="soon.jpg" alt="Comming Soon" width="700px" />
+                <img class="contenu" src="soon.jpg" alt="Comming Soon" />
                 <!--image comming soon pour mes travaux-->
                 <br />
                 <a href="#Haut">Up</a>
@@ -104,8 +116,8 @@
             <a name="Contact">
                 <!--lien contact-->
                 <h2>Contact</h2>
-                <h4>send me your messages, or comments</h4>
-                <form>
+                <p>Send me your messages, or comments :</p>
+                <form class="contact">
                     <label>First Name:</label>
                     <input type="text" name="firstName" />
                     <!--input Prenom-->
@@ -114,11 +126,11 @@
                     <!--input Nom-->
                     <br />
                     <!--retour à la ligne-->
-                    <label>Email:</label>
-                    <input type="email" name="email" />
+                    <label class="email">Email:</label>
+                    <input class="email" type="email" name="email" />
                     <!--input email-->
                     <br />
-                    <textarea name="message" cols="60" rows="5"> </textarea>
+                    <textarea class="text" name="message" cols="60" rows="5"> </textarea>
                     <!--input message de 5 lignes avec 60 caractères pour chaque ligne-->
                     <br />
                     <a href="mailto:Rmhedhly@gmail.com">
@@ -134,7 +146,7 @@
     </main>
     <footer>
         <!--pied de la page-->
-        <hr width="75%">
+        <hr>
         <h6>Ramy Hedhly, N° tel: 55471817, Email: Rmhedhly@gmail.com</h6>
     </footer>
 </body>
